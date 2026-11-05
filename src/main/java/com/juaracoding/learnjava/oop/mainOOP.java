@@ -43,7 +43,12 @@ public class mainOOP {
 
         bidangDatar bidangDatar = new bidangDatar();
         bidangDatar.draw();
-        
-    }
 
+        //inheritance
+        manager manager = new manager("udung", 25, "Manager", "IT");
+        System.out.print(manager.setNama());
+        System.out.println(" : " + manager.setUmur());
+        System.out.println(manager.setJabatan());
+        System.out.println(manager.getDepartemen());
+    }
 }

@@ -114,8 +114,7 @@ public class Method {
          System.out.println("4. Transfer");
          System.out.println("5. Keluar");
          System.out.print("Pilih menu: ");
-         java.util.Scanner input = new java.util.Scanner(System.in);
-         int menu = input.nextInt();
+         int menu = scanner.nextInt();
          switch (menu) {
             case 1:
                  System.out.println("Cek Saldo");
@@ -134,6 +133,7 @@ public class Method {
             default:
                  System.out.println("Menu tidak tersedia");
              }
+         scanner.close();
     }
 }
 

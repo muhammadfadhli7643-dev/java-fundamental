@@ -111,5 +111,6 @@ public class Perulangan {
             }
 
         }
+        scanner.close();
     }
 }

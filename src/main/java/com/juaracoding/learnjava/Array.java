@@ -53,5 +53,6 @@ public class Array {
             int total = (scanner.nextInt() + prices[j]);
             System.out.println("harga total: " + total);
         }
+        scanner.close();
     }
 }
