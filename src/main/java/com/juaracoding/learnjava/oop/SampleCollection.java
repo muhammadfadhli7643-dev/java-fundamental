@@ -9,6 +9,7 @@ public class SampleCollection {
         cars.add("Volvo");
         cars.add("BMW");
         cars.add("Ford");
+        System.out.println(cars.get(1));
     }
 
 }
