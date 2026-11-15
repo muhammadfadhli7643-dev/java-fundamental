@@ -1,21 +1,29 @@
 package com.juaracoding.learnjava.oop;
 
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class CalculatorTest {
 
+    calculator calculator;
+
+    @BeforeClass 
+    public void setUp() {
+        calculator = new calculator(); 
+        System.out.println("setup sebelum test");
+    }
+
     @Test
     public void testAdd() {
-        calculator calc = new calculator();
-        int result = calc.add(2, 3);
-        assert result == 5 : "Expected 5 but got " + result;
+        int result = calculator.add(2, 3);
+        Assert.assertEquals(result, 5);
     }
 
     @Test
     public void testSubtract() {
-        calculator calc = new calculator();
-        int result = calc.subtract(5, 3);
-        assert result == 2 : "Expected 2 but got " + result;
+        int result = calculator.subtract(5, 3);
+        Assert.assertEquals(result, 2);
     }
 
 }
