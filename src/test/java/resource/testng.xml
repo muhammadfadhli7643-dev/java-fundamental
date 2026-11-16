@@ -4,8 +4,6 @@
   <test name="OOPTest">
     <classes>
       <class name="com.juaracoding.learnjava.oop.AuthTest"/>
-    </classes>
-    <classes>
       <class name="com.juaracoding.learnjava.oop.KaryawanTest"/>
     </classes>
   </test>
